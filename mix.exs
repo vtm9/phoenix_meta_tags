@@ -9,7 +9,7 @@ defmodule PhoenixMetaTags.MixProject do
       app: :phoenix_meta_tags,
       name: "Phoenix Meta Tags",
       version: @version,
-      elixir: "~> 1.10",
+      elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
       package: package(),
       deps: deps(),
@@ -25,8 +25,9 @@ defmodule PhoenixMetaTags.MixProject do
 
   defp deps do
     [
-      {:phoenix_html, "~> 2.10 or ~> 3.0"},
-      {:plug, "~> 1.7"},
+      {:phoenix_html, "~> 4.0"},
+      {:phoenix_html_helpers, "~> 1.0"},
+      {:plug, "~> 1.14"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end

@@ -1,4 +1,4 @@
-use Mix.Config
+import Config
 
 config :phoenix_meta_tags,
   title: "config_title",
